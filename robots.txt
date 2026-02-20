@@ -1,4 +1,222 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://spinbetter.site/sitemap.xml
+# Disallow private/admin areas
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/cache/
+Disallow: /wp-content/themes/
+Disallow: /cgi-bin/
+Disallow: /includes/
+Disallow: /library/
+Disallow: /temp/
+Disallow: /tmp/
+
+# Disallow duplicate content
+Disallow: /*?*
+Disallow: /*?
+Disallow: /*.pdf$
+Disallow: /*.zip$
+Disallow: /*.txt$
+Disallow: /*.xml$
+
+# Allow specific important pages with parameters
+Allow: /*?page_id=
+Allow: /*?s=
+
+# Crawl delay for slower servers
+Crawl-delay: 10
+
+# Host directive
+Host: https://spinbetterbonus.com
+
+# Sitemap location
+Sitemap: https://spinbetterbonus.com/sitemap.xml
+
+# ============================================
+# SPINBETTER BONUS - SEO OPTIMIZED ROBOTS
+# IMPORTANT PAGES ALLOWED FOR INDEXING
+# ============================================
+
+# Allow all important content pages
+Allow: /spinbetter-promo-code-anand-working.html
+Allow: /spinbetter-withdrawal-proof.html
+Allow: /spinbetter-withdrawal-problem-solution.html
+Allow: /spinbetter-safe-legit.html
+Allow: /spinbetter-legal-india.html
+Allow: /spinbetter-minimum-deposit-withdrawal.html
+Allow: /spinbetter-kyc-verification.html
+Allow: /spinbetter-customer-care-number.html
+Allow: /spinbetter-apk-download.html
+Allow: /spinbetter-no-deposit-bonus-anand.html
+Allow: /spinbetter-first-deposit-bonus-anand.html
+Allow: /spinbetter-welcome-bonus-package-anand.html
+Allow: /spinbetter-referral-code-anand.html
+Allow: /spinbetter-vs-linebet.html
+Allow: /spinbetter-casino-games.html
+Allow: /spinbetter-live-casino-guide.html
+Allow: /spinbetter-high-roller-bonus.html
+Allow: /spinbetter-vs-parimatch.html
+Allow: /spinbetter-andar-bahar-strategy.html
+Allow: /spinbetter-first-deposit-bonus-complete.html
+Allow: /ipl-2026-schedule-pdf-download.html
+
+# ============================================
+# USER AGENT SPECIFIC RULES
+# ============================================
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Crawl-delay: 5
+
+# Bingbot
+User-agent: bingbot
+Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Crawl-delay: 10
+
+# Yahoo Slurp
+User-agent: Slurp
+Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Crawl-delay: 10
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Crawl-delay: 20
+
+# Yandex
+User-agent: Yandex
+Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Crawl-delay: 5
+Host: https://spinbetterbonus.com
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Crawl-delay: 10
+
+# ============================================
+# BLOCK BAD BOTS & SCRAPERS
+# ============================================
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SeznamBot
+Disallow: /
+
+User-agent: Mail.Ru
+Disallow: /
+
+User-agent: MegaIndex
+Disallow: /
+
+User-agent: BUbiNG
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: TurnitinBot
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: SiteSucker
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: Offline Explorer
+Disallow: /
+
+User-agent: Teleport Pro
+Disallow: /
+
+User-agent: Wget
+Disallow: /
+
+User-agent: Xenu
+Disallow: /
+
+# ============================================
+# WORDPRESS SEO PLUGINS RULES (Yoast/RankMath)
+# ============================================
+
+# Yoast SEO sitemap
+Allow: /sitemap.xml
+Allow: /sitemap_index.xml
+Allow: /sitemap-
+Allow: /sitemap
+Allow: /wp-sitemap.xml
+
+# ============================================
+# SECURITY RULES
+# ============================================
+
+# Block access to sensitive files
+Disallow: /wp-config.php
+Disallow: /wp-config-sample.php
+Disallow: /readme.html
+Disallow: /license.txt
+Disallow: /error_log
+Disallow: /error.log
+Disallow: /.htaccess
+Disallow: /.htpasswd
+Disallow: /.git/
+Disallow: /.svn/
+Disallow: /composer.json
+Disallow: /composer.lock
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /web.config
+
+# Block access to backup files
+Disallow: /*.bak$
+Disallow: /*.backup$
+Disallow: /*.old$
+Disallow: /*.orig$
+Disallow: /*.sql$
+Disallow: /*.tar$
+Disallow: /*.gz$
+Disallow: /*.zip$
+
+# Block access to log files
+Disallow: /*.log$
+Disallow: /logs/
+Disallow: /log/
+
+# ============================================
+# CRAWL RATE OPTIMIZATION
+# ============================================
+
+# Visit https://www.google.com/webmasters/tools/crawl-optimization
+# to optimize crawl rate in Google Search Console
